@@ -7,6 +7,6 @@
 	"license": "MIT",
 	"private": false,
 	"dependencies": {
-		"lui-3_base": "~3.7.0"
+		"@wUFr/lui-3_base": "~3.7.0"
 	}
 }
