@@ -1,0 +1,12 @@
+{
+	"name": "lui-3_tabs",
+	"version": "3.7.0",
+	"description": "LUI-3 framework - tabs component",
+	"repository": "https://github.com/wUFr/lui-3_tabs",
+	"author": "Jiří Bělský",
+	"license": "MIT",
+	"private": false,
+	"dependencies": {
+		"lui-3_base": "~3.7.0"
+	}
+}

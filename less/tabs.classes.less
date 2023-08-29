@@ -1,0 +1,275 @@
+//
+// LUI-3
+// (C) Jiří Bělský (github.com/wUFr)
+// MIT licenced
+//
+
+
+.@{lui_class_prefix}_tabs when (@lui_tabs_class_enabled = true){
+	.lui.tabs.this();
+
+	& > ul when (@lui_tabs_class_list_enabled = true){
+		// DEFAULT VARIANT IS INLINE
+		.lui.tabs.list.this-horizontal();
+
+		& > li when (@lui_tabs_class_list_item_enabled = true){
+			// DEFAULT VARIANT IS INLINE
+			.lui.tabs.list.item-horizontal();
+
+			& > a when (@lui_tabs_class_list_link_enabled = true){
+				.lui.tabs.list.link();
+
+				// DEFAULT VARIANT IS INLINE
+				.lui.tabs.list.link-horizontal();
+			}
+
+			&.active > a when (@lui_tabs_class_list_link_active_enabled = true){
+				.lui.tabs.list.link-active();
+			}
+
+			&.ui-state-active > a when (@lui_tabs_class_list_link_active_enabled = true){
+				.lui.tabs.list.link-active();
+			}
+		}
+	}
+
+	&.horizonal {
+		& > ul when (@lui_tabs_class_list_enabled = true){
+			.lui.tabs.list.this-horizontal();
+
+			& > li when (@lui_tabs_class_list_item_enabled = true){
+				.lui.tabs.list.item-horizontal();
+
+				& > a when (@lui_tabs_class_list_link_enabled = true){
+					.lui.tabs.list.link-horizontal();
+				}
+			}
+		}
+	}
+
+	&.vertical {
+		& > ul when (@lui_tabs_class_list_enabled = true){
+			.lui.tabs.list.this-vertical();
+
+			& > li when (@lui_tabs_class_list_item_enabled = true){
+				.lui.tabs.list.item-vertical();
+
+				& > a when (@lui_tabs_class_list_link_enabled = true){
+					.lui.tabs.list.link-vertical();
+				}
+			}
+		}
+	}
+
+	&.xs-horizontal when (@grid_xs_enable = true){
+		& > ul when (@lui_tabs_class_list_enabled = true){
+			.lui.tabs.list.this-horizontal();
+
+			& > li when (@lui_tabs_class_list_item_enabled = true){
+				.lui.tabs.list.item-horizontal();
+
+				& > a when (@lui_tabs_class_list_link_enabled = true){
+					.lui.tabs.list.link-horizontal();
+				}
+			}
+		}
+	}
+
+	&.xs-vertical when (@grid_xs_enable = true){
+		& > ul when (@lui_tabs_class_list_enabled = true){
+			.lui.tabs.list.this-vertical();
+
+			& > li when (@lui_tabs_class_list_item_enabled = true){
+				.lui.tabs.list.item-vertical();
+
+				& > a when (@lui_tabs_class_list_link_enabled = true){
+					.lui.tabs.list.link-vertical();
+				}
+			}
+		}
+	}
+
+	@media (min-width:@grid_sm_start){
+		&.sm-horizontal when (@grid_sm_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-horizontal();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-horizontal();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-horizontal();
+					}
+				}
+			}
+		}
+
+		&.sm-vertical when (@grid_sm_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-vertical();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-vertical();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-vertical();
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width:@grid_md_start){
+		&.md-horizontal when (@grid_md_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-horizontal();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-horizontal();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-horizontal();
+					}
+				}
+			}
+		}
+
+		&.md-vertical when (@grid_md_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-vertical();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-vertical();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-vertical();
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width:@grid_lg_start){
+		&.lg-horizontal when (@grid_lg_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-horizontal();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-horizontal();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-horizontal();
+					}
+				}
+			}
+		}
+
+		&.lg-vertical when (@grid_lg_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-vertical();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-vertical();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-vertical();
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width:@grid_xl_start){
+		&.xl-horizontal when (@grid_xl_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-horizontal();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-horizontal();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-horizontal();
+					}
+				}
+			}
+		}
+
+		&.xl-vertical when (@grid_xl_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-vertical();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-vertical();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-vertical();
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width:@grid_xxl_start){
+		&.xxl-horizontal when (@grid_xxl_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-horizontal();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-horizontal();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-horizontal();
+					}
+				}
+			}
+		}
+
+		&.xxl-vertical when (@grid_xxl_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-vertical();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-vertical();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-vertical();
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width:@grid_xxxl_start){
+		&.xxxl-horizontal when (@grid_xxxl_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-horizontal();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-horizontal();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-horizontal();
+					}
+				}
+			}
+		}
+
+		&.xxxl-vertical when (@grid_xxxl_enable = true){
+			& > ul when (@lui_tabs_class_list_enabled = true){
+				.lui.tabs.list.this-vertical();
+
+				& > li when (@lui_tabs_class_list_item_enabled = true){
+					.lui.tabs.list.item-vertical();
+
+					& > a when (@lui_tabs_class_list_link_enabled = true){
+						.lui.tabs.list.link-vertical();
+					}
+				}
+			}
+		}
+	}
+}
+
+.ui_tabs_content when (@lui_tabs_class_content_enabled = true){
+	.lui.tabs.content();
+}
